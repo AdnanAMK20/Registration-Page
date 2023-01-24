@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    background-color: #d5d5d5;
+    height: 100vh;
+    font-family: 'Righteous';
+    overflow: hidden;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 100vh;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-top{
+    position: absolute;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.image-bottom{
+    height: 600px;
+}
+
+.form{
+    width:100%;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.form-section{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 75%;
+}
+
+.form-section h1{
+    font-size: 40px;
+    margin: 25px 0;
+    color: #353333;
+    text-transform: capitalize;
+}
+
+input{
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid #a7a7a7;
+    margin-bottom: 15px;
+    width: 100%;
+    margin:0 6px 10px 6px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #f59e2e;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.btn:hover{
+    background-color: #353333;
+}
+
+.btn-facebook{
+    background-color: #354c8d;
+}
+
+.btn-google{
+    background-color: #EA4335;
+}
+
+@media screen and (max-width:1100px){
+   .image-bottom{
+    display: none;
+   }
+   input{
+    font-size: 10px;
+   }
+   .image-top{
+    height: 700px;
+   }
+   .row{
+    display: flex;
+    flex-direction: column;
+   }
+   .btn{
+    font-size: 10px;
+   }
+   h1{
+    font-size: 14px;
+    padding-left: 10px;
+   }
+   main{
+    grid-template-columns: 1fr;
+   }
+   body{
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+   }
+   .form-section{
+    padding-left: 10px;
+   }
+}
